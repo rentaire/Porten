@@ -1,0 +1,35 @@
+$dark-gray: #0f0f0f;
+$gray: #191b1c;
+
+%title-font {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+@mixin line($max-width, $height) {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: $max-width;
+        margin: 0 auto;
+        height: $height;
+        background: #fff;
+    }
+}
+
+@mixin blackout($percent) {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, $percent);
+    z-index: 2;
+}

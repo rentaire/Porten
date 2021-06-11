@@ -1,0 +1,52 @@
+/* Для прижатого к низу футера*/
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+/* */
+
+body {
+    background-color: #000000;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.iconify {
+    &--phone {
+        font-size: 16px;
+    }
+    &--log-in {
+        font-size: 14px;
+    }
+    &--cart {
+        font-size: 22px;
+    }
+    &--search {
+        font-size: 22px;
+    }
+}
